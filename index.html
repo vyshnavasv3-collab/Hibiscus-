@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f8">
+  <title>Hibiscus — Natural Beauty & Personal Care</title>
+  <meta name="description" content="Explore Hibiscus beauty and personal-care essentials, including soap, hair oil, shampoo, lip balm and skincare.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Hibiscus home"><span class="logo-flower">✿</span> HIBISCUS</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#offers">Offers</a><a href="#about">Our Story</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search products">⌕</button>
+        <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">♡ <span id="cartCount">0</span></button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#offers">Offers</a><a href="#about">Our Story</a>
+    </nav>
+  </header>
+
+  <div class="search-box" id="searchBox">
+    <div class="container search-inner">
+      <input type="search" id="searchInput" placeholder="Search soap, hair oil, shampoo..." autocomplete="off" aria-label="Search products">
+      <button id="closeSearch" aria-label="Close search">✕</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR EVERYDAY BEAUTY RITUAL</span>
+          <h1>Care that feels<br><span>naturally you.</span></h1>
+          <p>Thoughtful beauty and personal-care essentials for your everyday routine. Find a little moment of care in every day with Hibiscus.</p>
+          <a href="#shop" class="primary-btn">Explore the collection <span>→</span></a>
+          <div class="hero-note"><span>✿</span> A little care, every day</div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Beauty and skincare products with botanical flowers">
+          <div class="hero-visual-label"><span>THE DAILY RITUAL</span><strong>Made for your<br>moments of care.</strong></div>
+          <span class="hero-sticker">BEAUTY<br>IN BLOOM ✿</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Our values">
+      <div class="container trust-items"><span>✿ Everyday self-care</span><span>♡ Feel-good essentials</span><span>❋ Beauty for your routine</span></div>
+    </section>
+
+    <section class="categories-section" id="categories">
+      <div class="container">
+        <div class="section-heading"><div><span class="small-title">FIND YOUR FAVOURITES</span><h2>Shop by category</h2></div><p>Little essentials for your daily ritual.</p></div>
+        <div class="category-grid">
+          <button class="category-card" data-category="Soap"><span class="category-icon">❋</span><strong>Soap</strong><small>Cleanse & refresh</small></button>
+          <button class="category-card" data-category="Hair Oil"><span class="category-icon">♧</span><strong>Hair Oil</strong><small>Nourish your hair</small></button>
+          <button class="category-card" data-category="Shampoo"><span class="category-icon">♨</span><strong>Shampoo</strong><small>Fresh hair days</small></button>
+          <button class="category-card" data-category="Lip Balm"><span class="category-icon">♡</span><strong>Lip Balm</strong><small>Soft lips, daily</small></button>
+          <button class="category-card" data-category="Skincare"><span class="category-icon">✿</span><strong>Skincare</strong><small>Your skin ritual</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers-section" id="offers">
+      <div class="container">
+        <div class="section-heading"><div><span class="small-title">A LITTLE SOMETHING SPECIAL</span><h2>Care picks for you</h2></div><span class="offers-badge">THE HIBISCUS EDIT</span></div>
+        <div class="offers-grid">
+          <article class="offer-card offer-rose"><span class="offer-flower">✿</span><div class="offer-content"><span class="offer-label">BATH & BODY</span><h3>Make room<br>for a softer routine.</h3><p>Discover everyday cleansing essentials.</p><button class="offer-btn" data-offer-category="Soap">Shop soaps <span>→</span></button></div></article>
+          <article class="offer-card offer-cream"><span class="offer-flower">♧</span><div class="offer-content"><span class="offer-label">HAIR CARE</span><h3>Good hair days<br>start with care.</h3><p>Find your hair-care favourites.</p><button class="offer-btn" data-offer-category="Hair Oil">Explore hair care <span>→</span></button></div></article>
+          <article class="offer-card offer-green"><span class="offer-flower">♡</span><div class="offer-content"><span class="offer-label">DAILY ESSENTIALS</span><h3>Small rituals.<br>Lovely moments.</h3><p>Everyday essentials, all in one place.</p><button class="offer-btn" data-offer-category="All">View all products <span>→</span></button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="container">
+        <div class="section-heading shop-heading"><div><span class="small-title">THE HIBISCUS COLLECTION</span><h2>Everyday favourites</h2></div><button class="clear-filter" id="clearFilter">View all products ↗</button></div>
+        <div class="filter-row" aria-label="Filter products">
+          <button class="filter-btn active" data-filter="All">All products</button>
+          <button class="filter-btn" data-filter="Soap">Soap</button>
+          <button class="filter-btn" data-filter="Hair Oil">Hair Oil</button>
+          <button class="filter-btn" data-filter="Shampoo">Shampoo</button>
+          <button class="filter-btn" data-filter="Lip Balm">Lip Balm</button>
+          <button class="filter-btn" data-filter="Skincare">Skincare</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="no-products" id="noProducts"><div>⌕</div><h3>No products found</h3><p>Try another search or category.</p></div>
+      </div>
+    </section>
+
+    <section class="story-showcase">
+      <div class="story-image" role="img" aria-label="Botanical skincare and self-care products"></div>
+      <div class="story-copy"><span class="small-title">YOUR MOMENT OF CARE</span><h2>Let your everyday<br><em>ritual bloom.</em></h2><p>From bath-time favourites to hair and skincare essentials, Hibiscus brings together little things that help make your daily routine feel special.</p><a href="#shop" class="primary-btn">Find your favourites <span>→</span></a></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-content"><div><span class="small-title">THE HIBISCUS WAY</span><h2>Beauty is in<br>the little things.</h2></div><div><p>Hibiscus is a beauty and personal-care collection created for the everyday. Explore soaps, hair oils, shampoos, lip balms and skincare essentials to find the products that fit your routine.</p><p>Choose your favourites, add them to your cart and send your order directly through WhatsApp.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-content"><div><a href="#home" class="footer-logo"><span>✿</span> HIBISCUS</a><p>A little care, every day.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">Our Story</a></nav><div class="copyright">© <span id="year"></span> Hibiscus. All rights reserved.</div></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header"><div><span class="small-title">YOUR PICKS</span><h2>Shopping bag</h2></div><button id="closeCart" class="close-btn" aria-label="Close cart">✕</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><div class="empty-icon">♡</div><h3>Your bag is waiting</h3><p>Add a few favourites to get started.</p></div></div>
+    <div class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><button class="checkout-btn" id="checkoutBtn">Continue to checkout →</button><p class="cart-note">Delivery charges, if any, can be confirmed on WhatsApp.</p></div>
+  </aside>
+
+  <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="checkout-modal"><button class="modal-close" id="closeModal" aria-label="Close checkout">✕</button><span class="small-title">ALMOST THERE</span><h2 id="checkoutTitle">Complete your order</h2><p class="modal-description">Add your details and we’ll prepare your order message in WhatsApp.</p>
+      <form id="checkoutForm"><label>Full name<input type="text" id="customerName" placeholder="Your name" autocomplete="name" required></label><label>Phone number<input type="tel" id="customerPhone" placeholder="Your phone number" autocomplete="tel" required></label><label>Delivery address<textarea id="customerAddress" placeholder="Your complete delivery address" rows="3" autocomplete="street-address" required></textarea></label><button type="submit" class="whatsapp-submit">Continue to WhatsApp ↗</button></form>
+    </div>
+  </div>
+  <a href="#" class="floating-whatsapp" id="floatingWhatsApp" aria-label="Contact Hibiscus on WhatsApp">☏</a>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
